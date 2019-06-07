@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/3f4befa373.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="index.js" type="text/javascript"></script>
+    <title>Alien Speech Recognition</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+
+    <h1 align="center" id="borders"><i class="fab fa-autoprefixer style=" float: left"></i><b> Alien Speech
+            Recognition</b> </h1>
+    <button class="talk" id="btn" onclick="functionles()" onmouseout="out()"> TAP TO SPEAK </button>
+    <label id="listening" style="visibility: hidden">Listening you can speak now ......</label>
+    <h3 class="content"><b>Result will be displayed here </b></h3>
+    <div class='lists' id="lists" onmouseover="mousein()" onmouseout="mouseout()">
+        <p>
+            <h3 style="text-align: center"><b><u>Try Speaking This</u> !!</b> </h3>1]- who made you .<br>2]- How are you
+            .<br>3]- What is the Weather .<br>4]- Tell Me About Stock .<br>5]- What About You
+            Alien .<br>6]- Tell Me More About Bullet .<br>7]- How Do You Work Alien .<br>8]- Do you have Girl friend
+            .<br>9]- What Do You Eat .<br>10]- Tell Me A Joke .<br>11]- Tell Me something .<br>12]- Your Favourite Movie
+            .<br>13]- Your Favourite Singer .<br>14]- Tell Me A Dialogue .<br>15]- What are you wearing .
+            <br>16]- What does the fog say .<br>17]- Tell Me Some Famous Song .<br>18]- Who was your first crush
+            .<br>19]- Do You Belive In Ghosts .<br>20]- Where Do You Live Alien .<br>21]- What Is Your Best Feature .
+            <br>22]- Do You Want To Go On A Date .<br>23]- Can You Rap For Me .<br>24]- Clean My Room .<br> 25]- You Are
+            So Nice .
+        </p>
+    </div>
+    <footer>
+        <h3 align="center">Made With ♥ By <span style="font-family: 'Cantarell', sans-serif;"><u>HARSH DAVE</u></span>
+            2019 © </h3>
+    </footer>
+    <script>
+        alert("Welcome To Speech Recognition Application Program Interface !! Step's will Guide You How Too Use Application !! ");
+        alert("Allow Access To Alien Speech Recognition To Use Your Microphone !! Its Safe And Will Help You To Speak Too Alien Assistant !! ");
+        alert('Tap On Tap to speak and get started !! Inspired By Likhu Made By Harsh ->:) ');
+        function functionles() {
+            document.getElementById("listening").style.visibility = "visible";
+            document.getElementById('listening').style.fontSize = "20px";
+        }
+        function out() {
+            document.getElementById("listening").style.visibility = "hidden";
+        }
+        function mousein() {
+            document.getElementById("lists").style.backgroundColor = "#EFFFC8";
+        }
+        function mouseout() {
+            document.getElementById("lists").style.backgroundColor = "#FFC09F";
+
+        }
+        const btn = document.querySelector('.talk');
+        const content = document.querySelector('.content');
+
+        var joke = ['Hear about the new restaurant called Karma ...... there\'s no menu ...... you get what you deserve',
+            'Dentist: This will hurt a little.......Patient “OK"....... Dentist:...... “I’ve been having an affair with your wife for a while now',
+            'Teacher:..... "Kids, what does the chicken give you?........."Student:..... "Meat!"....Teacher: ....."Very good! Now what does the pig give you?......"Student: ......"Bacon!"......Teacher: ....."Great!..... And what does the fat cow give you?...."Student:.... "Homework!"',
+            'Question:..... Is Google male or female?...... answer... Female,.... because it doesn\'t let you finish a sentence before making a suggestion.',
+            ' What do Alexander the Great.... and... Winnie the Pooh have in common?.........Same middle name...',
+            'How did the hipster burn his mouth?....... He ate the pizza before it was cool.'
+        ];
+        var singer = ['arijit singh', 'ed sheeran', 'armaan malik', 'momina mustehsan'];
+        var dialogue = ['I’ll make him an offer he can’t refuse...',
+            'Why so serious? Let’s put a smile on that face.',
+            ' You shoot me in a dream, you better wake up and apologise ',
+            'Say hello to my little friend..',
+            'I’ll be back,”.... “hasta la vista baby, ”......“you are terminated”',
+            'Close your eyes. Fall in love. Stay there.',
+            'You talkin’ to me? '];
+        var qoute = [
+            'When one door closes another opens or you can open the closed door that’s how doors work.',
+            'We all have two lives. The second one starts when we realize we only have one.',
+            'In your life you only get to do so many things and right now we’ve chosen to do this, so let’s make it great.',
+            'It is not how much we have, but how much we enjoy, that makes happiness.',
+            'A winner is just a loser who tried knee more time.',
+            'You don\'t drawn by falling in the water, you drawn by staying there'
+        ];
+        var harsh = ['...harsh made me on 07 june 2019'];
+        var greetings = [
+            'im good you little peace of love',
+            'doing good homeboy',
+            'leave me alone'
+        ];
+        var movie = ['Titanic', '3 Idiots', 'Arrival', 'The Social Network', 'Gladiator '];
+        var weather = [
+            'weather is fine',
+            'you need a tan',
+            'wishing it would rain today !!'
+        ];
+        var made = [
+            'my name is alien and i am personal assistant of harsh dave '
+        ];
+        var stock = ['tata motors is in the profit by 1.50 %', 'facebook is in the loss by 0.51%',
+            'tata motors is in the profit by 1.50 %',
+            'Tech Mahindra is in the profit by 2.50 %',
+            'bmw is in the loss by 0.20 %'
+        ];
+        var bullet = ['fastest thing i have ever saw on this earth ', 'I love Bullet'];
+        var work = ['i am speech recognition program made by harsh using javascript and react native and html and node js and css and ajax and es6 my interface is simple but my code is complex'];
+        var girlfriend = ['yes i have girl friend and here name is siri and she is apples assistant '];
+        var eat = ['i dont eat i consume electricty 240 volts direct current'];
+        var cloth = ['“Just some bits and bobs I picked up in engineering.”'];
+        var fog = [' “Ring-ding-ding-ding-ding-and-ding-a-wah-a-pah-pah-pah-pah or so I’ve heard.”'];
+        var song = ['solo', 'despacito', 'perfect', 'Right Now', 'sorry', 'We Don\'t Talk Anymore', 'What Do You Mean?', 'Shape Of You', 'Something Just Like This', 'Happier', 'i can\'t get enough', ' If I Can\'t Have You', 'Thousand years', 'Nobody', 'I don\'t care', 'Nothing like us', 'Paper hearts', 'Waste on me', 'Two of us'];
+        var crush = ['its is the top secret... but ..!! still in my book it would be ...     siri !! '];
+        var ghosts = ['yes i believe in ghost ', 'don\'t scare me man', 'only at night '];
+        var live = ['i.. fly wherever there\'s wifi', 'some time i live in your pocket ...... check me out there', 'on krypton planet ... where superman come from '];
+        var best = ['that\'s for you too decide', 'i\'m always learning to do new things.. that\'s a good feature', 'one off my best feature is i cant\' keep a grudge.. i literally can\'t'];
+        var dates = ['yes ...i\'m.. all for setting dates and chatting with you', 'depend\'s ']
+        var rap = ['if you requested .... i will try ... if you ask me how ...i\'m doing...i\'ll always let you kown....if you need to know the weather....i\'ll tell you if there\'ss.. snow.....i have jokes at my disposal....if you\'re ever feeling low....but please don\'t bring me in a boat....cause i don\'t know how to row'];
+        var room = [' Let me try ..... poof ... did anything happen? .... i guess i can\'t '];
+        var nice = ['thats so funny.... i was just thinking the same thing about you ', 'that\'s nice to hear.... i hope you know the feeling.... it is mutual'];
+
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        const Recognition = new SpeechRecognition();
+        Recognition.onstart = function () {
+            console.log('voice is activated , you can speak to microphone ');
+        };
+        Recognition.onresult = function (event) {
+            const current = event.resultIndex;
+
+            const transcript = event.results[current][0].transcript;
+            content.textContent = transcript;
+            readOutloud(transcript);
+        };
+        //add the listener to the btn 
+
+        btn.addEventListener('click', () => {
+            Recognition.start();
+        });
+
+        function readOutloud(message) {
+            const speech = new SpeechSynthesisUtterance();
+
+            if (message.includes('how are you')) {
+                const finalText = greetings[Math.floor(Math.random() * greetings.length)];
+                speech.text = finalText;
+            } else if (message.includes('what about you alien')) {
+                const finalText = made[Math.floor(Math.random() * made.length)];
+                speech.text = finalText;
+            } else if (message.includes('stock')) {
+                const finalText = stock[Math.floor(Math.random() * stock.length)];
+                speech.text = finalText;
+            } else if (message.includes('what is the weather')) {
+                const finalText = weather[Math.floor(Math.random() * weather.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('tell me more about bullet')) {
+                const finalText = bullet[Math.floor(Math.random() * bullet.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('how do you work alien')) {
+                const finalText = work[Math.floor(Math.random() * work.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('do you have girlfriend')) {
+                const finalText = girlfriend[Math.floor(Math.random() * girlfriend.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('what do you eat')) {
+                const finalText = eat[Math.floor(Math.random() * eat.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('who made you')) {
+                const finalText = harsh[Math.floor(Math.random() * harsh.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('tell me a joke')) {
+                const finalText = joke[Math.floor(Math.random() * joke.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('tell me something')) {
+                const finalText = qoute[Math.floor(Math.random() * qoute.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('favourite movie')) {
+                const finalText = movie[Math.floor(Math.random() * movie.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('favourite singer')) {
+                const finalText = singer[Math.floor(Math.random() * singer.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('tell me a dialogue')) {
+                const finalText = dialogue[Math.floor(Math.random() * dialogue.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('what are you wearing')) {
+                const finalText = cloth[Math.floor(Math.random() * cloth.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('what does the fog say')) {
+                const finalText = fog[Math.floor(Math.random() * fog.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('tell me some famous song')) {
+                const finalText = song[Math.floor(Math.random() * song.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('who was your first crush')) {
+                const finalText = crush[Math.floor(Math.random() * crush.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('do you believe in ghost')) {
+                const finalText = ghosts[Math.floor(Math.random() * ghosts.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('where do you live alien')) {
+                const finalText = live[Math.floor(Math.random() * live.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('what is your best feature')) {
+                const finalText = best[Math.floor(Math.random() * best.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('do you want to go on a date')) {
+                const finalText = dates[Math.floor(Math.random() * dates.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('can you Rap for me')) {
+                const finalText = rap[Math.floor(Math.random() * rap.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('clean my room')) {
+                const finalText = room[Math.floor(Math.random() * room.length)];
+                speech.text = finalText;
+            }
+            else if (message.includes('you are so nice')) {
+                const finalText = nice[Math.floor(Math.random() * nice.length)];
+                speech.text = finalText;
+            }
+
+
+            else {
+                speech.text = message;
+            }
+            speech.volume = 5;
+            speech.rate = 1;
+            speech.pitch = 1;
+            window.speechSynthesis.speak(speech);
+        }
+    </script>
+</body>
+
+</html>
